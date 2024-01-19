@@ -27,6 +27,7 @@ class MusicPlayActivity : AppCompatActivity() {
             val playmusic=intent.getStringExtra("Music")
         if (playmusic != null) {
             mediaPlayer=MediaPlayer.create(this,playmusic.toUri())
+            mediaPlayer.setVolume(1.0f,1.0f)
 
         }
         val btnplay=findViewById<ImageView>(R.id.Play)
